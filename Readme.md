@@ -17,14 +17,6 @@ Ensure you have git installed (of course!), and in your preferred cli terminal, 
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
-* **Sho CARTER-DANIEL** - *JavaScript Developer* - [LinkedIn](https://www.linkedin.com/in/sho-silva-carter-daniel-18347618/)
+* **Sho CARTER-DANIEL** - *JavaScript Developer* - [LinkedIn Profile](https://www.linkedin.com/in/sho-silva-carter-daniel-18347618/)
