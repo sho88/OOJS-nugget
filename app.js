@@ -141,7 +141,7 @@ var App = {
 				<hr />
 
 				<div>
-					<button>Add User</button>
+					<button class="ms-bgColor-themePrimary">Add User</button>
 				</div>
 			</form>
 			<ul class="users" id="users-list"></ul>
