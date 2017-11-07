@@ -126,8 +126,9 @@ var App = {
 	element: document.getElementById('root'),
 	template: `
 		<div>
-			<h1>OOJS Nugget Application</h1>
-			
+			<h1>OOJS Nugget Application<br /></h1>
+			<h4>Please read the JS code!</h4>
+
 			<form name="user" novalidate>
 				<div>
 					<label for="forename">Forename</label>
@@ -142,7 +143,7 @@ var App = {
 				<hr />
 
 				<div>
-					<button class="ms-bgColor-themePrimary">Add User</button>
+					<button class="button-primary">Add User</button>
 				</div>
 			</form>
 			<ul class="users" id="users-list"></ul>
