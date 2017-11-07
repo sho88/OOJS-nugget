@@ -1,7 +1,6 @@
 body {
 	background: #ffffff;
-	font-family: 'arial', sans-serif;
-	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
 	line-height: 25px;
 }
 
@@ -22,14 +21,5 @@ hr {
 }
 
 button {
-	background: #e74c3c;
-	border: 0;
-	border-radius: 3px;
-	border-bottom: 5px solid rgba(0, 0, 0, .2);
-	color: #ffffff;
-	cursor: pointer;
-	display: block;
 	font: inherit;
-	outline: 0;
-	padding: 5px 15px;
 }

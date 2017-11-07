@@ -126,7 +126,8 @@ var App = {
 	element: document.getElementById('root'),
 	template: `
 		<div>
-			<h1>VanillaJS Application</h1>
+			<h1>OOJS Nugget Application</h1>
+			
 			<form name="user" novalidate>
 				<div>
 					<label for="forename">Forename</label>
