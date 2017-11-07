@@ -1,0 +1,35 @@
+body {
+	background: #ffffff;
+	font-family: 'arial', sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+input[type=text] {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	display: block;
+	font: inherit;
+	height: 35px;
+	outline: 0;
+	padding: 0 10px;
+}
+
+hr {
+	background: linear-gradient(to right, transparent, #cccccc, transparent);
+	border: 0;
+	height: 1px;
+}
+
+button {
+	background: #e74c3c;
+	border: 0;
+	border-radius: 3px;
+	border-bottom: 5px solid rgba(0, 0, 0, .2);
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	font: inherit;
+	outline: 0;
+	padding: 5px 15px;
+}
