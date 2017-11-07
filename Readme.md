@@ -1,10 +1,15 @@
 # OOJS-nugget
 Just some basic JS nugget stuff I know of in ES5. There's more to show, but this should be a decent start.
 
+## What to look out for...
+Usage of the following:
+* JS Modules
+* Classes
+* .call(), .bind()
+* Prototypes
+
 ## Getting Started
-
 Ensure you have git installed (of course!), and in your preferred cli terminal, type the following:
-
 ```
 - git clone https://github.com/sho88/OOJS-nugget.git
 - cd OOJS-nugget
@@ -12,7 +17,6 @@ Ensure you have git installed (of course!), and in your preferred cli terminal, 
 ```
 
 ## Built With
-
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
