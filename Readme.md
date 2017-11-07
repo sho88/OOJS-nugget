@@ -22,7 +22,7 @@ Ensure you have git installed (of course!), and in your preferred cli terminal, 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript)
-* [MS Fabric](https://developer.microsoft.com/en-us/fabric) - Microsofts UI Framework 
+* [MS Fabric](https://developer.microsoft.com/en-us/fabric) - Microsoft UI Framework 
 
 ## Authors
 
