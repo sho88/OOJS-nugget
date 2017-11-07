@@ -7,7 +7,7 @@
 
 /**
  * An application doesn't need to be this long, however, I'd suggest 
- * that one either migrates over to ES6 using babel (babel link goes here) 
+ * that one either migrates over to ES6 using babel (https://babeljs.io/) 
  * or, could use an AMD loader to split the application into modules.
  * ( a more modular approach )
  */
