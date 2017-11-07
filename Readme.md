@@ -1,10 +1,12 @@
 # OOJS-nugget
-Just some basic JS nugget stuff I know of in ES5. There's more to show, but this should be a decent start.
+Just some basic JS nugget stuff I know of in ES5 used to create a list of "people" or "users".
+There's more to show, but this should be a decent start.
 
 ## What to look out for...
 Usage of the following:
-* JS Modules
-* Classes
+* Module Pattern
+* IIFE (Immediately-Invoked Function Expression)
+* Classe
 * .call(), .bind()
 * Prototypes
 
