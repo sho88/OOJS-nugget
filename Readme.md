@@ -6,7 +6,7 @@ There's more to show, but this should be a decent start.
 Usage of the following:
 * Module Pattern
 * IIFE (Immediately-Invoked Function Expression)
-* Classe
+* Classes
 * .call(), .bind()
 * Prototypes
 

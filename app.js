@@ -195,4 +195,5 @@ var App = {
 }
 
 
+// Initialize the app here
 App.init()
