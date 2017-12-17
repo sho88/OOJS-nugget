@@ -1,6 +1,6 @@
 /**
  * OOJavaScript nuggets
- * @author Sho CARTER-DANIEL <s.carter-daniel@outlook.com>
+ * @author Sho CARTER-DANIEL <shosilva@icloud.com>
  */
 
 'use strict';
