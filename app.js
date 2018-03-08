@@ -45,7 +45,7 @@ var EventListener = function() {
 
 
 /**
- * This is an IIFE
+ * This is an Revealing Module Pattern
  * Description: On load time, this function is invoked automatically without 
  * having to be called from any other place. You cannot call this function as
  * you would call any other function.
@@ -57,20 +57,30 @@ var Util = (function () {
 	 * This is what "hoisting" is..."a function is loaded before anything else, no
 	 * matter where the function is placed, it'll always be 'hoisted'. "
 	 */
-	return {
+	return { 
 		createElement: createElement
 	}
 
+	// this is a public method
 	function createElement(tagName, content) {
 		var tagName = typeof tagName === 'undefined' ? 'div' : tagName; 
 		var element = document.createElement(tagName);
 		var text = document.createTextNode(content);
 		element.appendChild(text); // this could be .innerHTML, but not best, as it leaves application vulnerable to attacks
 		
+		// a private method being called here
+		_logAction(tagName + ' element created.');
+
+		// return the created element
 		return element
 	}
-})(); // notice the () at the end of this. This is what invokes the function itself
 
+	// this is a private method
+	// also, notice that this method is prepended with "_"; this is common with "private" methods/properties
+	function _logAction(message) {
+		console.log(message);
+	}
+}()); // this blocks out any "global" variables from the scope of this module
 
 /**
  * To create a class in JavaScript ES5, other than the traditional way of doing
@@ -108,7 +118,7 @@ User.prototype.getSurname = function () {
 }
 
 User.prototype.getFullName = function () {
-	return this.forename + ' ' + this.surname;
+	return this.getForename() + ' ' + this.getSurname();
 }
 
 
@@ -124,31 +134,31 @@ User.prototype.getFullName = function () {
  */
 var App = {
 	element: document.getElementById('root'),
-	template: `
-		<div>
-			<h1>OOJS Nugget Application<br /></h1>
-			<h4>Please read the JS code!</h4>
+	template: [
+		'<div>',
+			'<h1>OOJS Nugget Application<br /></h1>',
+			'<h4>Please read the JS code!</h4>',
 
-			<form name="user" novalidate>
-				<div>
-					<label for="forename">Forename</label>
-					<input autocomplete="off" id="forename" name="forename" type="text" value="John">
-				</div>
+			'<form name="user" novalidate>',
+				'<div>',
+					'<label for="forename">Forename</label>',
+					'<input autocomplete="off" id="forename" name="forename" type="text" value="John">',
+				'</div>',
 
-				<div>
-					<label for="surname">Surname</label>
-					<input autocomplete="off" id="surname" name="surname" type="text" value="Smith">
-				</div>
+				'<div>',
+					'<label for="surname">Surname</label>',
+					'<input autocomplete="off" id="surname" name="surname" type="text" value="Smith">',
+				'</div>',
 
-				<hr />
+				'<hr />',
 
-				<div>
-					<button class="button-primary">Add User</button>
-				</div>
-			</form>
-			<ul class="users" id="users-list"></ul>
-		</div>
-	`, // add the template...
+				'<div>',
+					'<button class="button-primary">Add User</button>',
+				'</div>',
+			'</form>',
+			'<ul class="users" id="users-list"></ul>',
+		'</div>'
+	].join(''), // add the template...
 
 	init: function () {
 		this.render();
@@ -195,5 +205,8 @@ var App = {
 }
 
 
-// Initialize the app here
-App.init()
+// this is an IIFE
+;(function ( application ) {
+	// Initialize the app here
+	application.init()
+})( App );
